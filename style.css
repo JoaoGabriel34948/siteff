@@ -1,0 +1,504 @@
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f6f7fb;
+    color:#222;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:80px;
+
+    background:#fff;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 8%;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+    z-index:999;
+}
+
+.logo{
+
+    font-size:30px;
+    font-weight:700;
+
+    color:#ff6b00;
+
+}
+
+nav{
+
+display:flex;
+gap:35px;
+
+}
+
+nav a{
+
+text-decoration:none;
+
+color:#333;
+
+font-weight:500;
+
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:#ff6b00;
+
+}
+
+.icons{
+
+display:flex;
+align-items:center;
+gap:20px;
+
+}
+
+.icons button{
+
+padding:10px 25px;
+
+border:none;
+
+background:#ff6b00;
+
+color:#fff;
+
+border-radius:30px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.icons button:hover{
+
+transform:translateY(-3px);
+
+box-shadow:0 10px 20px rgba(255,107,0,.3);
+
+}
+
+.cart{
+
+position:relative;
+
+font-size:25px;
+
+cursor:pointer;
+
+}
+
+.cart span{
+
+position:absolute;
+
+top:-8px;
+
+right:-12px;
+
+width:20px;
+
+height:20px;
+
+background:red;
+
+color:#fff;
+
+border-radius:50%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:12px;
+
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+
+margin-top:80px;
+
+height:90vh;
+
+background:linear-gradient(120deg,#111827,#1f2937);
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+padding:20px;
+
+}
+
+.hero-content{
+
+max-width:800px;
+
+}
+
+.hero h1{
+
+font-size:60px;
+
+color:#fff;
+
+margin-bottom:20px;
+
+}
+
+.hero p{
+
+color:#d9d9d9;
+
+font-size:22px;
+
+margin-bottom:35px;
+
+}
+
+.btn{
+
+display:inline-block;
+
+padding:18px 40px;
+
+background:#ff6b00;
+
+color:#fff;
+
+text-decoration:none;
+
+border-radius:40px;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.btn:hover{
+
+transform:translateY(-5px);
+
+box-shadow:0 20px 30px rgba(255,107,0,.3);
+
+}
+
+/* ===========================
+   CATEGORIAS
+=========================== */
+
+.categories{
+
+padding:80px 8%;
+
+}
+
+.categories h2{
+
+text-align:center;
+
+font-size:40px;
+
+margin-bottom:50px;
+
+}
+
+.category-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:30px;
+
+}
+
+.category-card{
+
+background:#fff;
+
+border-radius:20px;
+
+padding:40px;
+
+text-align:center;
+
+font-size:45px;
+
+transition:.3s;
+
+cursor:pointer;
+
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.category-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.category-card h3{
+
+font-size:22px;
+
+margin-top:20px;
+
+}
+
+/* ===========================
+   PRODUTOS
+=========================== */
+
+.products{
+
+padding:80px 8%;
+
+}
+
+.products h2{
+
+text-align:center;
+
+font-size:40px;
+
+margin-bottom:50px;
+
+}
+
+.product-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+gap:35px;
+
+}
+
+.product-card{
+
+background:#fff;
+
+border-radius:20px;
+
+padding:25px;
+
+text-align:center;
+
+transition:.3s;
+
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.product-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.product-card img{
+
+width:170px;
+
+margin-bottom:20px;
+
+}
+
+.product-card h3{
+
+font-size:24px;
+
+margin-bottom:15px;
+
+}
+
+.price{
+
+font-size:28px;
+
+font-weight:700;
+
+color:#ff6b00;
+
+margin-bottom:25px;
+
+}
+
+.product-card button{
+
+width:100%;
+
+padding:16px;
+
+border:none;
+
+background:#ff6b00;
+
+color:#fff;
+
+font-size:18px;
+
+border-radius:12px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.product-card button:hover{
+
+background:#ff8124;
+
+}
+
+/* ===========================
+   VANTAGENS
+=========================== */
+
+.advantages{
+
+padding:80px 8%;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+gap:30px;
+
+background:#111827;
+
+color:#fff;
+
+}
+
+.advantages div{
+
+text-align:center;
+
+}
+
+.advantages h3{
+
+font-size:28px;
+
+margin-bottom:15px;
+
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+
+background:#0f172a;
+
+color:#fff;
+
+text-align:center;
+
+padding:40px;
+
+}
+
+/* ===========================
+   RESPONSIVO
+=========================== */
+
+@media(max-width:900px){
+
+header{
+
+padding:20px;
+
+}
+
+nav{
+
+display:none;
+
+}
+
+.hero h1{
+
+font-size:40px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.hero h1{
+
+font-size:32px;
+
+}
+
+.categories h2,
+.products h2{
+
+font-size:30px;
+
+}
+
+.product-card{
+
+padding:20px;
+
+}
+
+}
